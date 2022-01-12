@@ -1,5 +1,11 @@
+header {
+    font-size: 40px;
+    font-family: satisfy;
+}
+
 p {
     font-size: 1.2em;
+    font-family: montserrat, roboto, satisfy;
 }
 
 ul li {
