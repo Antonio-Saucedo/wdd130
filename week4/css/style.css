@@ -1,24 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bdb9b9;
+    font-size: 30px;
+}
+
 header {
     background-color: #00A9BA;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    color: #043053;
 }
 
 header nav {
     font-family: roboto;
     font-size: 30px;
     color: #294D2E;
-}
-
-body {
-    background-color: #bdb9b9;
-    font-size: larger;
-    padding: 0;
-    margin: 0;
-}
-
-main div h1 {
-    font-family: satisfy;
-    font-size: 40px;
-    color: #3B2F27;
 }
 
 h1 {
@@ -39,13 +45,25 @@ h3 {
     color: #432229;
 }
 
-p {
+/* Class selector */
+div.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.hero {
+    font-family: satisfy;
+    font-size: 40px;
+    color: #3B2F27;
+}
+
+div.services {
     font-family: montserrat;
     font-size: 25px;
     color: #000000;
 }
 
-footer nav {
+ div.social {
     font-family: roboto;
     font-size: 20px;
     color: #FFFFFF;
