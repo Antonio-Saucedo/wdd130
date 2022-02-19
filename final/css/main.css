@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* list of fonts to be used in site */
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Nanum Myeongjo', serif; */
+    /* font-family: 'Roboto Serif', sans-serif; */
+}
+
+body{
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid #51321A;
+    background-color: #B4BBE4;
+}
+
+header, nav, footer, li, .name, .purpose{
+    padding: 10px;
+}
+
+header{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #B3FCF7;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    color: #1B0E10;
+}
+
+h2{
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    color: #1B0E10;
+}
+
+h3{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #1B0E10;
+}
+
+p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+footer{
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
