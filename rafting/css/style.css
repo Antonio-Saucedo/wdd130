@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   width: 100%;
   background-color: #043053;
   font-size: 30px;
@@ -102,11 +100,6 @@ p {
 }
 
 /* Class selector */
-.page {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .banner {
   position: relative;
   width: 100%;
@@ -157,8 +150,9 @@ p {
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr .5fr;
-  column-gap: 80px;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 8%;
+  row-gap: 8%;
   font-family: montserrat;
   font-size: 20px;
   color: #000000;
