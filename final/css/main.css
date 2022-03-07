@@ -61,7 +61,7 @@ main {
   color: #ffffff;
 }
 
-.siteplannav{
+.siteplannav {
   background-color: #d8ab88;
 }
 
@@ -194,13 +194,12 @@ p {
 }
 
 .services {
-  padding-top: 30px;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.7fr 0.5fr;
   column-gap: 8%;
   row-gap: 4%;
-  height: 1100px;
   font-family: montserrat;
   font-size: 20px;
   color: #000000;
@@ -261,7 +260,7 @@ p {
 
 .sociallinks {
   display: block;
-  margin-block-start: 0.5rem;
+  margin-block-start: 1rem;
   margin-right: 10px;
   justify-self: right;
   grid-column: 2;
