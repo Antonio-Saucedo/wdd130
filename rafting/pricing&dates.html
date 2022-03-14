@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/main.js"></script>
   </head>
 
   <body>
@@ -37,10 +38,9 @@
               <a href="index.html" title="Site Home">Home</a>
             </li>
             <li>
-              <a href="services.html" title="Services">Services</a>
-            </li>
-            <li>
-              <a class="current" href="faq.html" title="FAQ">FAQ</a>
+              <a class="current" href="pricing&dates.html" title="Prices/Dates"
+                >Price/Dates</a
+              >
             </li>
             <li>
               <a href="aboutus.html" title="About Us">About Us</a>
@@ -49,47 +49,61 @@
         </nav>
       </header>
       <main>
-        <div class="banner">
-          <picture class="noclick">
-            <img src="images/gauleyRiver.jpg" alt="Gauley River Image" />
-          </picture>
-          <div>
-            <button class="button">Reserve Now!</button>
+        <section class="pricing">
+          <h2>PRICE / DATES</h2>
+          <div class="r3c1">
+            <form action="/reservation.php">
+              <label for="date"><strong>Select Date:</strong></label>
+              <input type="date" id="date" name="date" />
+              <label class="r2c1" for="adults"><strong>Adults:</strong></label>
+              <input
+                type="number"
+                id="adults"
+                name="adults"
+                min="1"
+                max="10"
+                step="1"
+                value="1"
+              />
+              <label class="r3c1" for="children"
+                ><strong>Children:</strong></label
+              >
+              <input
+                type="number"
+                id="children"
+                name="children"
+                min="0"
+                max="10"
+                step="1"
+                value="0"
+              />
+              <label class="notice" class="r4c1" for="notice"
+                ><strong>No Children under 8</strong></label
+              >
+              <label class="r5c1" for="price"><strong>Price:</strong></label>
+              <input
+                class="r5c1"
+                class="amount"
+                type="text"
+                id="price"
+                name="price"
+                value="$100.00"
+                disabled
+              />
+            </form>
           </div>
-        </div>
-        <section class="services">
-          <div class="div1">
-            <h2>We run river to relax</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+          <div class="r2c1">
+            <picture class="noclick">
+              <img src="images/reservenow.jpg" alt="Reserve Now Image" />
+            </picture>
+            <div>
+              <button class="buttonreserve">Reserve Now!</button>
+            </div>
           </div>
-          <picture>
-            <img src="images/calm.jpg" alt="Smooth Rafting" class="box1" />
-          </picture>
-          <div class="div2">
-            <h2>We run whitewater for the rush</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
-          </div>
-          <picture>
-            <img src="images/rush.jpg" alt="Intense Rafting" class="box2" />
-          </picture>
-          <div class="div3">
-            <h2>Come run with us!</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+          <div class="calendarbox">
+            <div class="calendar">
+              <div class="month"></div>
+            </div>
           </div>
         </section>
       </main>
