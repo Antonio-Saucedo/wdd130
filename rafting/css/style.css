@@ -178,7 +178,7 @@ p {
 
 .main img,
 .mainaboutus img,
-.r2c1 img {
+.r1c1 img {
   margin-left: 15px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px #043053;
@@ -411,11 +411,8 @@ input:disabled {
   grid-row: 3;
 }
 
-.r4c1 {
-  grid-row: 4;
-}
-
 .notice {
+  grid-row: 4;
   font-size: 15px;
 }
 
