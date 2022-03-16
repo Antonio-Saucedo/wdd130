@@ -251,6 +251,7 @@ p {
 }
 
 .r1c1 {
+  position: relative;
   grid-row: 1;
   grid-column: 1;
   padding-right: 20px;
@@ -296,8 +297,8 @@ iframe {
 
 .buttonreserve {
   position: absolute;
-  top: 460px;
-  left: 280px;
+  top: 200px;
+  left: 160px;
   padding: 10px;
   border-radius: 10px;
   background-color: #043053;
