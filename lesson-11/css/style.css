@@ -30,12 +30,18 @@ label {
 }
 
 input {
-    font-family: 'Arial', sans-serif;
-    font-size: medium;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    font-size: large;
 }
 
 textarea {
+    border-color: black;
+    border-radius: 10px;
     resize: none;
+    font-family: 'Times New Roman';
+    font-size: large;
 }
 
 footer {
