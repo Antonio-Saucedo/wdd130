@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my WDD-130 forms website" />
+    <title>Forms - Antonio Saucedo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h2>FORMS</h2>
+    </header>
+    <main>
+      <section>
+        <form action="" method="get">
+          <div class="entry">
+              <label for="fname">Enter your first name:</label>
+              <input type="text" placeholder="First Name" name="fname" id="fname" required>
+          </div>
+          <div class="entry">
+              <label for="lname">Enter your last name:</label>
+              <input type="text" placeholder="Last Name" name="lname" id="lname" required>
+          </div>
+          <div class="entry">
+              <label for="phone">Enter your phone number:</label>
+              <input type="tel" placeholder="123-456-7890" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+          </div>
+          <div class="entry">
+              <label for="email">Enter your email:</label>
+              <input type="email" placeholder="Email" name="email" id="email" required>
+          </div>
+          <div class="entry">
+              <label for="msg">Message:</label>
+              <textarea name="user_message" id="msg" cols="30" rows="5" maxlength="250"></textarea>
+          </div>
+          <div>
+              <input class="button" type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <p>© 2022 Forms - Antonio Saucedo - WDD 130-20</p>
+    </footer>
+  </body>
+</html>
