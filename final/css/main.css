@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   /* list of fonts to be used in site */
   /* font-family: 'Caveat', cursive; */
   /* font-family: 'Lobster', cursive; */
@@ -58,6 +57,7 @@ main {
 }
 
 .siteplantext {
+  padding-left: 10px;
   color: #ffffff;
 }
 
@@ -66,17 +66,18 @@ main {
 }
 
 .siteplanli {
-  padding: 10px;
+  padding-top: 10px;
   text-align: center;
   list-style-type: none;
 }
 
 .siteplanli li {
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .siteplanli img {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: center;
 }
 
@@ -248,10 +249,9 @@ p {
 }
 
 .social {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
-  margin-block-start: 1rem;
-  padding-left: 1rem;
-  grid-row: inherit;
   font-family: "Roboto Serif", sans-serif;
   font-size: 20px;
   white-space: nowrap;
