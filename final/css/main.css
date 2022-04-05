@@ -4,14 +4,12 @@
 }
 
 body {
-  width: 100%;
   background-color: #b4bbe4;
   font-size: 30px;
 }
 
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -67,24 +65,17 @@ main {
   grid-column: 3;
 }
 
-.siteplannav {
-  background-color: #d8ab88;
-}
-
-.siteplanli {
-  padding-top: 10px;
-  text-align: center;
+.siteplanli, .siteplanli li {
+  padding: 10px 0px;
   list-style-type: none;
-}
-
-.siteplanli li {
-  padding-top: 10px;
+  text-align: center;
 }
 
 .siteplanli img {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
 }
 
 .navigation {
@@ -146,6 +137,10 @@ p {
 }
 
 /* Class selector */
+.navcontent {
+  grid-column: 2/4;
+}
+
 .site {
   list-style: none;
 }
