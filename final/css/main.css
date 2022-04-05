@@ -53,31 +53,6 @@ main {
   background-color: #d8ab88;
 }
 
-.siteplantext h1 , .siteplantext h2{
-  color: #ffffff;
-}
-
-.siteplantext h1{
-  grid-column: 2;
-}
-
-.siteplantext h2{
-  grid-column: 3;
-}
-
-.siteplanli, .siteplanli li {
-  padding: 10px 0px;
-  list-style-type: none;
-  text-align: center;
-}
-
-.siteplanli img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0px;
-}
-
 .navigation {
   display: flex;
   margin: 0;
@@ -136,7 +111,35 @@ p {
   letter-spacing: 0.03em;
 }
 
-/* Class selector */
+/* Site Plan Specific Classes */
+.siteplantext h1,
+.siteplantext h2 {
+  color: #ffffff;
+}
+
+.siteplantext h1 {
+  grid-column: 2;
+}
+
+.siteplantext h2 {
+  grid-column: 3;
+}
+
+.siteplanli,
+.siteplanli li {
+  padding: 10px 0px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.siteplanli img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+}
+
+/* Class Selector */
 .navcontent {
   grid-column: 2/4;
 }
