@@ -47,7 +47,7 @@ main,
   text-align: center;
 }
 
-footer{
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -175,7 +175,8 @@ p {
   font-family: "Lobster", cursive;
 }
 
-.button:hover, .formbutton:hover {
+.button:hover,
+.formbutton:hover {
   background-color: #ffffff;
   color: #000000;
   transition: 0.7s;
@@ -310,7 +311,8 @@ p {
   height: 550px;
 }
 
-.text, .form {
+.text,
+.form {
   padding: 15px;
 }
 
