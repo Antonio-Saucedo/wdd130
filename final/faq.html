@@ -26,16 +26,16 @@
             height="200"
           />
         </picture>
-        <nav class="navcontent">
-          <ul class="navigation">
+        <nav class="navigation">
+          <ul>
             <li>
               <a href="fp-index.html" title="Home">Home</a>
             </li>
             <li>
-              <a href="recipes.html" title="Recipes & Events">Recipes</a>
+              <a class="current" href="recipes.html" title="Recipes">Recipes</a>
             </li>
             <li>
-              <a class="current" href="faq.html" title="FAQ">FAQ</a>
+              <a href="faq.html" title="FAQ">FAQ</a>
             </li>
             <li>
               <a href="aboutUs.html" title="About Us">About Us</a>
@@ -44,48 +44,72 @@
         </nav>
       </header>
       <main>
-        <h1>Ready for a great Dinner Date?</h1>
+        <h1>What would you like to know?</h1>
         <div class="banner">
           <picture class="noclick">
             <img src="images/ingredients.jpg" alt="Ingredients" />
           </picture>
-          <div>
-            <button class="button">Reserve Now!</button>
-          </div>
         </div>
-        <section class="services">
-          <div class="div1">
-            <h2>We provide great date ideas</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+        <section class="list">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openItem(event, 'question1')"
+              id="defaultOpen"
+            >
+              Requests
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'question2')">
+              Instructors
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'question3')">
+              Subscriptions
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'question4')">
+              Events
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'question5')">
+              Coming up
+            </button>
+            <button class="tablinks" onclick="openItem(event, 'question6')">
+              Experience
+            </button>
           </div>
-          <picture class="noclick">
-            <img class="box" src="images/desert.jpg" alt="Desert" />
-          </picture>
-          <div class="div2">
-            <h2>Cooking is funner in groups</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+          <div id="question1" class="tabcontent">
+            <h2>Do we take recipe requests?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
           </div>
-          <picture class="noclick">
-            <img class="box" src="images/foodtwo.jpg" alt="Food2" />
-          </picture>
-          <div class="div3">
-            <h2>Join us for a great time!</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+          <div id="question2" class="tabcontent">
+            <h2>Do we have instructors?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
+          </div>
+          <div id="question3" class="tabcontent">
+            <h2>Do we have a subscription program?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
+          </div>
+          <div id="question4" class="tabcontent">
+            <h2>What events do we have?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
+          </div>
+          <div id="question5" class="tabcontent">
+            <h2>What recipes are we bringing out soon?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
+          </div>
+          <div id="question6" class="tabcontent">
+            <h2>How much experience do you need?</h2>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio hic minima libero praesentium quidem adipisci dolorum eveniet rerum optio. Officiis error quaerat quam. Quibusdam et saepe ducimus dolor ut fugiat similique odio blanditiis, libero voluptatibus hic, unde cum molestias omnis asperiores facere assumenda. Veniam obcaecati autem consequatur perspiciatis, reiciendis laboriosam dolorem asperiores modi, itaque dolor saepe voluptates officiis eos ut, aspernatur maiores minima consequuntur ad perferendis! Laudantium quas eos repellat placeat blanditiis molestiae est vel pariatur architecto delectus quos iure, libero sequi commodi dolorum, ab expedita quae ducimus culpa dignissimos eveniet asperiores quod dolorem.</p>
+            </div>
           </div>
         </section>
       </main>
@@ -118,5 +142,6 @@
         </div>
       </footer>
     </div>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
