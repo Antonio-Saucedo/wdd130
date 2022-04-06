@@ -38,58 +38,85 @@
               <a href="faq.html" title="FAQ">FAQ</a>
             </li>
             <li>
-              <a class="current" href="contactUs.html" title="Contact Us">Contact Us</a>
+              <a class="current" href="contactUs.html" title="Contact Us"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>Ready for a great Dinner Date?</h1>
+        <h1>Let's have a chat</h1>
         <div class="banner">
           <picture class="noclick">
             <img src="images/ingredients.jpg" alt="Ingredients" />
           </picture>
-          <div>
-            <button class="button">Reserve Now!</button>
-          </div>
         </div>
-        <section class="services">
-          <div class="div1">
-            <h2>We provide great date ideas</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+        <section class="formcontainer">
+          <div class="form">
+            <h2>We love hearing from you!</h2>
           </div>
-          <picture class="noclick">
-            <img class="box1" src="images/foodone.jpg" alt="Food1" />
-          </picture>
-          <div class="div2">
-            <h2>Cooking is funner in groups</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
+          <div>
+            <form action="images/getbacktoyou.jpg" method="get">
+              <div class="form">
+                <label for="fname">Enter your first name:</label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="fname"
+                  id="fname"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="form">
+                <label for="lname">Enter your last name:</label>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="lname"
+                  id="lname"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="form">
+                <label for="phone">Enter your phone number:</label>
+                <input
+                  type="tel"
+                  placeholder="123-456-7890"
+                  name="phone"
+                  id="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  maxlength="12"
+                />
+              </div>
+              <div class="form">
+                <label for="email">Enter your email:</label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  maxlength="40"
+                  required
+                />
+              </div>
+              <div class="form">
+                <label for="msg">Message:</label>
+                <textarea class="usermessage"
+                  name="user_message"
+                  id="msg"
+                  cols="30"
+                  rows="5"
+                  maxlength="150"
+                ></textarea>
+              </div>
+              <div class="form">
+                <input class="formbutton" type="submit" value="Submit" />
+              </div>
+            </form>
           </div>
-          <picture class="noclick">
-            <img class="box2" src="images/foodtwo.jpg" alt="Food2" />
-          </picture>
-          <div class="div3">
-            <h2>Join us for a treat!</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              ipsa, dolor saepe neque voluptates voluptas vitae et quae totam
-              nostrum molestiae dignissimos ipsum illo provident odio veritatis.
-              Eius, adipisci necessitatibus?
-            </p>
-          </div>
-          <picture class="center">
-            <img class="box3" src="images/desert.jpg" alt="Desert" />
-          </picture>
         </section>
       </main>
       <footer>
