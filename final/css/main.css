@@ -4,9 +4,22 @@
   box-sizing: border-box;
 }
 
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  width: 960px;
+}
+
 body {
   background-color: #b4bbe4;
-  font-size: 30px;
 }
 
 header {
@@ -18,63 +31,103 @@ header {
   background-color: #2b2e89;
 }
 
+header picture,
+.social {
+  padding-left: 30px;
+}
+
+main {
+  background-color: #d8ab88;
+}
+
+main,
+.siteplantext,
+.siteplanli {
+  text-align: center;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  font-family: "Roboto Serif", sans-serif;
-  font-size: 20px;
   background-color: #2b2e89;
+}
+
+footer,
+.siteplantext {
   color: #ffffff;
+}
+
+footer p {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+.navigation {
+  font-family: "Caveat", cursive;
+}
+
+h1,
+.navigation {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+body,
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 25px;
+}
+
+/* Site Plan Specific Classes */
+.siteplantext h1 {
+  grid-column: 2;
+}
+
+.siteplanli,
+.siteplanli img {
+  padding: 10px 0px;
+}
+
+.siteplanli img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Class Selector */
+.navigation a,
+.siteplantext,
+.social {
   white-space: nowrap;
 }
 
-header,
-nav,
-main,
-footer {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-header, main, footer {
-  width: 960px;
-}
-
-header picture {
-  justify-self: center;
-}
-
-header .noclick {
-  padding-left: 10px;
-}
-
-.noclick, .center {
-  pointer-events: none;
-  user-select: none;
-}
-
-main {
-  display: block;
-  background-color: #d8ab88;
-}
-
 .navigation {
-  display: flex;
-  margin: 0;
-  padding: 10px;
-  font-size: 40px;
-  font-family: 'Caveat', cursive;
+  grid-column: 2/4;
 }
 
-.navigation li {
+.navigation ul {
+  display: flex;
+}
+
+.navigation li,
+.siteplanli {
   list-style-type: none;
 }
 
 .navigation a {
-  padding: 0.75rem;
+  padding: 15px;
   text-decoration: none;
-  white-space: nowrap;
   color: #91c598;
 }
 
@@ -89,75 +142,18 @@ main {
   color: #000000;
 }
 
-h1 {
-  display: block;
-  grid-row: inherit;
-  font-family: "Caveat", cursive;
-  font-size: 40px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-h2 {
-  text-align: center;
-  padding: 10px;
-  font-family: "Caveat", cursive;
-  font-size: 35px;
-}
-
-h3 {
-  padding-left: 10px;
-  font-family: "Caveat", cursive;
-  font-size: 30px;
-  color: #000000;
-}
-
-p {
-  padding-bottom: 20px;
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-size: 25px;
-  justify-self: center;
-  letter-spacing: 0.05em;
-}
-
-/* Site Plan Specific Classes */
-.siteplantext h1,
-.siteplantext h2 {
-  color: #ffffff;
-}
-
-.siteplantext h1 {
-  grid-column: 2;
-}
-
-.siteplantext h2 {
-  grid-column: 3;
-}
-
-.siteplanli,
-.siteplanli li {
-  padding: 10px 0px;
-  list-style-type: none;
-  text-align: center;
-}
-
-.siteplanli img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0px;
-}
-
-/* Class Selector */
-.navcontent {
-  grid-column: 2/4;
+.noclick,
+.center {
+  pointer-events: none;
+  user-select: none;
 }
 
 .site {
   list-style: none;
 }
 
-.banner {
+.banner,
+.social {
   padding-top: 8px;
   position: relative;
 }
@@ -172,8 +168,7 @@ p {
   color: #5cf1ff;
   overflow: hidden;
   font-size: 25px;
-  font-family: 'Lobster', cursive;
-
+  font-family: "Lobster", cursive;
 }
 
 .button:hover {
@@ -187,10 +182,10 @@ p {
   background: #000000;
   display: block;
   position: absolute;
-  padding-top: 50%;
-  padding-left: 110%;
+  padding-top: 83px;
+  padding-left: 405px;
   margin-left: -15px !important;
-  margin-top: -35%;
+  margin-top: -55px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -211,19 +206,18 @@ p {
   row-gap: 30px;
 }
 
-.center, .div3 {
+.center,
+.div3 {
   grid-column: 1/3;
 }
 
-.div1, .div2, .div3 {
+.div1,
+.div2,
+.div3 {
   padding: 0px 10px;
-  text-align: center;
 }
 
-.div1{
-  grid-row: 2;
-}
-
+.div1,
 .div2 {
   grid-row: 2;
 }
@@ -232,7 +226,9 @@ p {
   grid-row: 4;
 }
 
-.box1, .box2, .box3 {
+.box1,
+.box2,
+.box3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -247,15 +243,63 @@ p {
   background-color: #ffffff;
 }
 
-.social {
-  padding-top: 8px;
-  padding-left: 10px;
-  display: block;
-  white-space: nowrap;
-}
-
 .sociallinks {
   padding-top: 5px;
   padding-right: 10px;
   justify-self: right;
+}
+
+/* Recipes Site Specific Classes */
+.recipe {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.images {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.images img {
+  border-radius: 20px;
+}
+
+.tab {
+  margin-top: 50px;
+  border: 1px solid #000000;
+  width: 151px;
+  height: 218px;
+}
+
+.tab button {
+  display: block;
+  background-color: #5cf1ff;
+  color: black;
+  padding: 20px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 800;
+}
+
+.tab button:hover {
+  background-color: #2b2e89;
+  color: #ffffff;
+}
+
+.tab button.active {
+  background-color: #b4bbe4;
+}
+
+.tabcontent {
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: #5cf1ff;
+  width: 700px;
+  height: 550px;
 }
