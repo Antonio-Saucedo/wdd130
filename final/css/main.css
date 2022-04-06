@@ -179,7 +179,7 @@ p {
 .formbutton:hover {
   background-color: #ffffff;
   color: #000000;
-  transition: 0.7s;
+  transition: 0.7s; 
 }
 
 .button:after {
